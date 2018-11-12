@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <head>
+    <link rel="stylesheet" href="./assets/survey.css">
     <title>Friend Finder Survey</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Compiled and minified CSS -->
@@ -12,11 +13,11 @@
     </h4>
     <div class="container">
         <div id="name" class="personal-info">
-            <label for="name">Name:</label>
+            <label class="white-text" for="name">Name:</label>
             <input type="text" name="name" id="nameFld" required>
         </div>
         <div id="pic" class="personal-info">
-            <label for="picture">Picture URL:</label>
+            <label class="white-text" for="picture">Picture URL:</label>
             <input type="text" name="picture" id="picFld">
         </div>
 
@@ -114,8 +115,18 @@
             <option value="5">5</option>
         </select>
         <!-- Modal Trigger -->
-        <button data-target="modal1" class="btn modal-trigger" id="submission-button">submit</button>
-
+        <button data-target="modal1" class="btn modal-trigger red accent-4 z-depth-4" id="submission-button">submit</button>
+        <div class="row center-align">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <a href="/apifriendList/" target="_blank">
+                        <button type="button" class="btn blue darken-4 m-3 z-depth-4">Friends List</button>
+                    </a>
+                    <a href="https://github.com/Jmichael96/FriendFinder" target="_blank">
+                        <button type="button" class="btn blue darken-4 m-3 z-depth-4">GitHub Repo</button>
+                    </a>
+                </div>
+            </div>
+    
     </div>
 
     </div>
