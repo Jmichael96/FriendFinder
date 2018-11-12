@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> </head>
 
 <body>
-
+    <h4 id="instructions" class="center-align bold-text">
+        Answer the following questions with option 1 (being the lowest) and option 5 (being the highest). Good Luck!!!
+    </h4>
     <div class="container">
         <div id="name" class="personal-info">
             <label for="name">Name:</label>
@@ -17,37 +19,11 @@
             <label for="picture">Picture URL:</label>
             <input type="text" name="picture" id="picFld">
         </div>
-        <div id="instructions">
-            Answer the following questions about your preferences regarding the mechanics or type of board games, popular games exemplifying
-            Using your preferences we'll find your perfect board game buddy.
-        </div>
+
 
         <div id="survey">
-            <div class="questionBlock">
-                <div class="question">Q1: Set Collection (Monopoly Deal, Gin, etc.)</div>
-                <select class="answer browser-default" id="q1">
-                    <option value=""></option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </div>
-            <div class="questionBlock">
-                <div class="question">Q2: Worker Placement (Agricola, Le Havre)</div>
-                <select class="answer browser-default" id="q2">
-                    <option value=""></option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </div>
-            <div class="questionBlock">
-                <divclass="question">Q3: Party Games (Taboo, Code Names, The Resistance)</div>
-            <select class="answer browser-default" id="q3">
+            <div class="question">Q1: Do you like rock music?</div>
+            <select class="answer browser-default" id="q1">
                 <option value=""></option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -56,8 +32,25 @@
                 <option value="5">5</option>
             </select>
         </div>
-        <div class="questionBlock">
-            <divclass="question">Q4: Story-telling (Dixit, Charades)</div>
+        <div class="question">Q2: Do you enjoy traveling?</div>
+        <select class="answer browser-default" id="q2">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <div class="question">Q3: Are you okay with having a lot of pets?</div>
+        <select class="answer browser-default" id="q3">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <div class="question">Q4: How is your mental stability?</div>
         <select class="answer browser-default" id="q4">
             <option value=""></option>
             <option value="1">1</option>
@@ -66,20 +59,16 @@
             <option value="4">4</option>
             <option value="5">5</option>
         </select>
-    </div>
-    <div class="questionBlock">
-        <divclass="question">Q5: Press your luck (Codenames, King of Tokyo, Pandemic, Ra)</div>
-    <select class="answer browser-default" id="q5">
-        <option value=""></option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-    </select>
-    </div>
-    <div class="questionBlock">
-        <div class="question">Q6: Co-op (Pandemic, Arkham Horror) </div>
+        <div class="question">Q5: How is your level patients?</div>
+        <select class="answer browser-default" id="q5">
+            <option value=""></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <div class="question">Q6: How is your tolerance of children?</div>
         <select class="answer browser-default" id="q6">
             <option value=""></option>
             <option value="1">1</option>
@@ -88,9 +77,7 @@
             <option value="4">4</option>
             <option value="5">5</option>
         </select>
-    </div>
-    <div class="questionBlock">
-        <div class="question">Q7: Collectible Card Games - CCGs (Magic, Netrunner, GoT) </div>
+        <div class="question">Q7: How is your accountability?</div>
         <select class="answer browser-default" id="q7">
             <option value=""></option>
             <option value="1">1</option>
@@ -99,9 +86,7 @@
             <option value="4">4</option>
             <option value="5">5</option>
         </select>
-    </div>
-    <div class="questionBlock">
-        <div class="question">Q8: Childhood games (Monopoly, Pictionary, Parcheesi)</div>
+        <div class="question">Q8: How well do you handle stressful situations?</div>
         <select class="answer browser-default" id="q8">
             <option value=""></option>
             <option value="1">1</option>
@@ -110,9 +95,7 @@
             <option value="4">4</option>
             <option value="5">5</option>
         </select>
-    </div>
-    <div class="questionBlock">
-        <div class="question">Q9: Family (7wonders, Patchwork, Splendor)</div>
+        <div class="question">Q9: Do you sometimes think to much?</div>
         <select class="answer browser-default" id="q9">
             <option value=""></option>
             <option value="1">1</option>
@@ -121,9 +104,7 @@
             <option value="4">4</option>
             <option value="5">5</option>
         </select>
-    </div>
-    <div class="questionBlock">
-        <div class="question">Q10: Video Games (You don't know Jack, Heads up)</div>
+        <div class="question">Q10: Rate your tolerance for conflict.</div>
         <select class="answer browser-default" id="q10">
             <option value=""></option>
             <option value="1">1</option>
@@ -132,27 +113,17 @@
             <option value="4">4</option>
             <option value="5">5</option>
         </select>
-    </div>
-    </div>
+        <!-- Modal Trigger -->
+        <button data-target="modal1" class="btn modal-trigger" id="submission-button">submit</button>
 
-    <!-- Modal Trigger -->
-    <button data-target="modal1" class="btn modal-trigger" id="submission-button">submit</button>
-    </div>
-    <div id="footer">&#169; Copyright 2017 Fahad Rahman</div>
     </div>
 
-    <!-- <div id="open-modal" class="modalDialog">
-        <div>
-            <a href="/" title="Close" class="close">X</a>
-            <h2 id="modal-heading">We've found your Board Game Buddy!</h2>
-            <div id="matchInfo">
-                <img src="" id="matchPic" alt="profile picutre">
-                <div id="matchName"></div>
-            </div>
-        </div>
-    </div> -->
-
-
+    </div>
+    <div class="center-align bold-text" id="footer">&#169; Copyright 2018 JEFFREY VANHORN </div>
+    </div>
+    </div>
+    </div>
+    </div>
     <!-- Modal Structure -->
     <div id="modal1" class="modal">
         <div class="container">
@@ -161,7 +132,9 @@
                     <h4 id="modal-heading" class="center-align">WE FOUND YOUR MATCH</h4>
                     <div id="matchInfo">
                         <img src="" id="matchPic" alt="profile picture">
-                        <h6>name:<h6 id="matchName"></h6> </h6>
+                        <h6>name:
+                            <h6 id="matchName"></h6>
+                        </h6>
                         <div class="modal-footer">
                             <button href="#!" class="modal-close btn-floating waves-effect red">Exit</button>
                         </div>
@@ -171,122 +144,52 @@
         </div>
     </div>
 
-                    <!-- JQuery -->
-                    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-                    <!-- Compiled and minified JavaScript -->
-                    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-                    <script type="text/javascript">
-                        $(document).ready(function () {
-                            $('.modal').modal();
-                        });
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.modal').modal();
+        });
 
-                        $('#submission-button').off().click(function () {
-                            let name = $('#nameFld').val().trim() || "No Name"
-                            let picURL = $('#picFld').val().trim() || "No picture provided"
-                            let ansArray = [
-                                $("#q1").val(),
-                                $("#q2").val(),
-                                $("#q3").val(),
-                                $("#q4").val(),
-                                $("#q5").val(),
-                                $("#q6").val(),
-                                $("#q7").val(),
-                                $("#q8").val(),
-                                $("#q9").val(),
-                                $("#q10").val()]
-                            let personObj = {};
+        $('#submission-button').off().click(function () {
+            let name = $('#nameFld').val().trim() || "No Name"
+            let picURL = $('#picFld').val().trim() || "No picture provided"
+            let ansArray = [
+                $("#q1").val(),
+                $("#q2").val(),
+                $("#q3").val(),
+                $("#q4").val(),
+                $("#q5").val(),
+                $("#q6").val(),
+                $("#q7").val(),
+                $("#q8").val(),
+                $("#q9").val(),
+                $("#q10").val()]
+            let personObj = {};
 
-                            personObj = {
-                                name: name,
-                                photo: picURL,
-                                scores: ansArray
-                            }
-                            console.log(name);
-                            console.log(personObj)
-                            $.post('/newperson', personObj, function (data) {
-                                console.log('your match is ' + data.name);
-                                console.log("data Added")
-                                $('#matchPic').attr("src", data.photo);
-                                $('#matchName').text(data.name);
-                                $('.close').off().click(function () {
-                                })
+            personObj = {
+                name: name,
+                photo: picURL,
+                scores: ansArray
+            }
+            console.log(name);
+            console.log(personObj)
+            $.post('/newperson', personObj, function (data) {
+                console.log('your match is ' + data.name);
+                console.log("data Added")
+                $('#matchPic').attr("src", data.photo);
+                $('#matchName').text(data.name);
+                $('.close').off().click(function () {
+                })
 
-                            });
+            });
 
-                        })
-        // var config = {
-        //     '.chosen-select': {},
-        //     '.chosen-select-deselect': { allow_single_deselect: true },
-        //     '.chosen-select-no-single': { disable_search_threshold: 10 },
-        //     '.chosen-select-no-results': { no_results_text: 'Oops, nothing found!' },
-        //     '.chosen-select-width': { width: "95%" }
-        // }
-        // for (var selector in config) {
-        //     $(selector).chosen(config[selector]);
-        // }
-        // // Capture the form inputs
-        // $("#submit").on("click", function (event) {
+        })
 
-
-        //     // Form validation
-        //     function validateForm() {
-        //         var isValid = true;
-        //         $(".form-control").each(function () {
-        //             if ($(this).val() === "") {
-        //                 isValid = false;
-        //             }
-        //         });
-
-        //         $(".chosen-select").each(function () {
-
-        //             if ($(this).val() === "") {
-        //                 isValid = false;
-        //             }
-        //         });
-        //         return isValid;
-        //     }
-
-        //     // If all required fields are filled
-        //     if (validateForm() === true) {
-        //         // Create an object for the user"s data
-        //         var userData = {
-        //             name: $("#name").val(),
-        //             photo: $("#photo").val(),
-        //             scores: [
-                        // $("#q1").val(),
-                        // $("#q2").val(),
-                        // $("#q3").val(),
-                        // $("#q4").val(),
-                        // $("#q5").val(),
-                        // $("#q6").val(),
-                        // $("#q7").val(),
-                        // $("#q8").val(),
-                        // $("#q9").val(),
-                        // $("#q10").val()
-        //             ]
-        //         };
-
-        //         var currentURL = window.location.origin;
-        //         // AJAX post the data to the friends API.
-        //         $.post(currentURL + '/api/friends', userData, function (data) {
-
-        //             // Grab the result from the AJAX post so that the best match's name and photo are displayed.
-        //             $("#match-name").text(data.name);
-        //             $("#match-img").attr("src", data.photo);
-        //             // Show the modal with the best match
-        //             $('#result-modal').modal('toggle');
-
-        //         });
-        //     } else {
-        //         alert("Please fill out all fields before submitting!");
-        //     }
-        // });
-
-                    </script>
-                    <!-- Latest compiled and minified JavaScript -->
-
-
+    </script>
 </body>
 
 </html>
