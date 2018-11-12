@@ -14,3 +14,7 @@ body{
 input{
     color: white;
 }
+.information{
+    font-weight: bolder;
+    font-size: 30px;
+}
