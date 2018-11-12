@@ -150,13 +150,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <script type="text/javascript">
+    //initates the modal on click
         $(document).ready(function () {
             $('.modal').modal();
         });
-
+        //initiates the submit button 
         $('#submission-button').off().click(function () {
             let name = $('#nameFld').val().trim() || "No Name"
             let picURL = $('#picFld').val().trim() || "No picture provided"
+            //collects data values from each question
             let ansArray = [
                 $("#q1").val(),
                 $("#q2").val(),
@@ -168,6 +170,8 @@
                 $("#q8").val(),
                 $("#q9").val(),
                 $("#q10").val()]
+
+            //calls data from input and puts it in the personObj
             let personObj = {};
 
             personObj = {
@@ -177,6 +181,7 @@
             }
             console.log(name);
             console.log(personObj)
+            //projects the users best match onto the modal and console
             $.post('/newperson', personObj, function (data) {
                 console.log('your match is ' + data.name);
                 console.log("data Added")
