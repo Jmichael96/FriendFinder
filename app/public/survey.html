@@ -151,73 +151,70 @@
             </div>
         </div>
     </div> -->
-    <div id="open-modal" class="modal modalDialog">
-        <div class="modal-content">
-            <div id="modal-heading" class="modal-header">
-                <h4>we have found your match</h4>
 
-                <button href="/" title="close " type="button" class="close" data-dismiss="modal">&times;</button>
-                <h2 class="modal-title">
-                    <strong>Best Match</strong>
-                </h2>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="modal-content">
+                    <h4 id="modal-heading" class="center-align">WE FOUND YOUR MATCH</h4>
+                    <div id="matchInfo">
+                        <img src="" id="matchPic" alt="profile picture">
+                        <h6>name:<h6 id="matchName"></h6> </h6>
+                        <div class="modal-footer">
+                            <button href="#!" class="modal-close btn-floating waves-effect red">Exit</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-                <h2 id="matchInfo"></h2>
-                <img id="matchPic" alt="profile picture" src="">
-                <div id="matchName"></div>
-            </div>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
     </div>
 
+                    <!-- JQuery -->
+                    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                    <!-- Compiled and minified JavaScript -->
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+                    <script type="text/javascript">
+                        $(document).ready(function () {
+                            $('.modal').modal();
+                        });
 
-    <!-- JQuery -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                        $('#submission-button').off().click(function () {
+                            let name = $('#nameFld').val().trim() || "No Name"
+                            let picURL = $('#picFld').val().trim() || "No picture provided"
+                            let ansArray = [
+                                $("#q1").val(),
+                                $("#q2").val(),
+                                $("#q3").val(),
+                                $("#q4").val(),
+                                $("#q5").val(),
+                                $("#q6").val(),
+                                $("#q7").val(),
+                                $("#q8").val(),
+                                $("#q9").val(),
+                                $("#q10").val()]
+                            let personObj = {};
 
-    <script type="text/javascript">
+                            personObj = {
+                                name: name,
+                                photo: picURL,
+                                scores: ansArray
+                            }
+                            console.log(name);
+                            console.log(personObj)
+                            $.post('/newperson', personObj, function (data) {
+                                console.log('your match is ' + data.name);
+                                console.log("data Added")
+                                $('#matchPic').attr("src", data.photo);
+                                $('#matchName').text(data.name);
+                                $('.close').off().click(function () {
+                                })
 
-        $('#submission-button').off().click(function () {
-            let name = $('#nameFld').val().trim() || "No Name"
-            let picURL = $('#picFld').val().trim() || "No picture provided"
-            let ansArray = [
-                $("#q1").val(),
-                $("#q2").val(),
-                $("#q3").val(),
-                $("#q4").val(),
-                $("#q5").val(),
-                $("#q6").val(),
-                $("#q7").val(),
-                $("#q8").val(),
-                $("#q9").val(),
-                $("#q10").val()]
-            let personObj = {};
+                            });
 
-            personObj = {
-                name: name,
-                photo: picURL,
-                scores: ansArray
-            }
-            console.log(name);
-            console.log(personObj)
-            $.post('/newperson', personObj, function (data) {
-                console.log('your match is ' + data.name);
-                console.log("data Added")
-                $('#matchPic').attr("src", data.photo);
-                $('#matchName').text(data.name);
-                $('.close').off().click(function () {
-                })
-                $(document).ready(function () {
-                    $('.modal').modal();
-                });
-
-            });
-
-        })
+                        })
         // var config = {
         //     '.chosen-select': {},
         //     '.chosen-select-deselect': { allow_single_deselect: true },
@@ -286,8 +283,8 @@
         //     }
         // });
 
-    </script>
-    <!-- Latest compiled and minified JavaScript -->
+                    </script>
+                    <!-- Latest compiled and minified JavaScript -->
 
 
 </body>
