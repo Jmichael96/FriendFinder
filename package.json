@@ -1,10 +1,12 @@
 {
   "name": "FriendFinder",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "dependencies": {
-    "moment": "^2.22.2"
+    "express": "^4.16.4",
+    "jquery": "^3.3.1",
+    "moment": "^2.22.2",
+    "router": "^1.3.3"
   },
   "devDependencies": {},
   "scripts": {
@@ -13,5 +15,14 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jmichael96/FriendFinder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jmichael96/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/Jmichael96/FriendFinder#readme",
+  "description": ""
 }

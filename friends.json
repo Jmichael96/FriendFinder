@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Jeffrey",
+    "photoURL": "https://www.pexels.com/photo/beard-hipster-man-outdoors-6969/",
+    "scores": [
+      "5",
+      "1",
+      "4",
+      "4",
+      "5",
+      "1",
+      "2",
+      "5",
+      "4",
+      "1"
+    ]
+  },
+  {
+    "name": "Sophie",
+    "photoURL": "https://www.pexels.com/photo/woman-smiling-beautiful-portrait-39547/",
+    "scores": [
+      "4",
+      "2",
+      "5",
+      "1",
+      "3",
+      "2",
+      "2",
+      "1",
+      "3",
+      "2"
+    ]
+  },
+  {
+    "name": "Jen",
+    "photoURL": "https://www.pexels.com/photo/sunny-photography-portrait-bokeh-59552/",
+    "scores": [
+      "5",
+      "2",
+      "2",
+      "2",
+      "4",
+      "1",
+      "3",
+      "2",
+      "5",
+      "5"
+    ]
+  },
+  {
+    "name": "Jake",
+    "photoURL": "https://www.pexels.com/photo/man-young-happy-smiling-91227/",
+    "scores": [
+      "3",
+      "3",
+      "4",
+      "2",
+      "2",
+      "1",
+      "3",
+      "2",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "name": "Bruce",
+    "photo": "https://www.pexels.com/photo/woman-smiling-beautiful-portrait-39547/",
+    "scores": [
+      "4",
+      "3",
+      "4",
+      "1",
+      "5",
+      "2",
+      "5",
+      "3",
+      "1",
+      "4"
+    ]
+  },
+  {
+    "name": "Brit",
+    "photo": "https://www.pexels.com/photo/beautiful-dress-fashion-forest-7051/",
+    "scores": [
+      "4",
+      "4",
+      "2",
+      "3",
+      "2",
+      "2",
+      "3",
+      "2",
+      "4",
+      "5"
+    ]
+  },
+  {
+    "name": "Chris",
+    "photo": "https://www.pexels.com/photo/man-person-portrait-autumn-16622/",
+    "scores": [
+      "2",
+      "4",
+      "3",
+      "1",
+      "1",
+      "1",
+      "5",
+      "3",
+      "4",
+      "2"
+    ]
+  },
+  {
+    "name": "Jeffrey",
+    "photo": "https://www.pexels.com/photo/cloudy-girl-black-wind-109851/",
+    "scores": [
+      "3",
+      "3",
+      "3",
+      "2",
+      "3",
+      "2",
+      "4",
+      "4",
+      "3",
+      "5"
+    ]
+  },
+  {
+    "name": "sarah",
+    "photo": "https://www.pexels.com/photo/cloudy-girl-black-wind-109851/",
+    "scores": [
+      "3",
+      "3",
+      "3",
+      "3",
+      "3",
+      "4",
+      "4",
+      "4",
+      "5",
+      "5"
+    ]
+  },
+  {
+    "name": "jennifer",
+    "photo": "https://www.pexels.com/photo/smiling-woman-in-pink-black-and-green-floral-tube-dress-near-green-leaf-plants-during-daytime-160998/",
+    "scores": [
+      "5",
+      "5",
+      "4",
+      "4",
+      "4",
+      "3",
+      "3",
+      "2",
+      "2",
+      "4"
+    ]
+  }
+]
